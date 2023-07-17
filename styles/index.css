@@ -20,16 +20,15 @@ body {
     justify-content: center;
     flex-direction: column;
     align-items: center;
-    height: 90vh;
-    width: 50vw;
+    height: 60vh;
+    width: 20vw;
     border-radius: 25px;
 }
 
 .profilePhoto {
-    height: 200px;
-    width: 200px;
+    height: 100px;
+    width: 100px;
     border-radius: 50%;
-
     cursor: pointer;
 }
 
@@ -41,13 +40,13 @@ body {
 .qrCode {
     border: 1px solid white;
     border-radius: 25px;
-    height: 350px;
+    height: 200px;
 }
 
 .badgeView > h2 {
     color: white;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    font-size: 45px;
+    font-size: 25px;
     margin: 25px;
 }
 
@@ -61,24 +60,24 @@ body {
     background-color: 162338;
     border-radius: 50%;
     border: 2px solid red;
-    height: 21.6vh;
+    height: 10.3vh;
 }
 
 .nameEx {
     background-color: red;
     text-align: center;
-    width: 50vh;
+    width: 35vh;
 }
 
 .intraName {
     background-color: red;
     text-align: center;
-    width: 50vh;
+    width: 35vh;
 }
 
 .config {
     display: flex;
     flex-direction: column;
     justify-content: center;
-   padding: 25px 25px 25px 25px;
+    padding: 25px 25px 25px 25px;
 }
