@@ -80,4 +80,7 @@ body {
     flex-direction: column;
     justify-content: center;
     padding: 25px 25px 25px 25px;
+    color: white;
+    font-size: 23px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
