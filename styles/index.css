@@ -32,11 +32,6 @@ body {
     cursor: pointer;
 }
 
-.profilePhoto:hover{
-    filter: blur(2px);
-    opacity: 25%;
-}
-
 .qrCode {
     border: 1px solid white;
     border-radius: 25px;
