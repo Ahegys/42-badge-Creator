@@ -5,16 +5,14 @@ const inputIntra = document.querySelector("#intraName");
 const colorSelect = document.querySelector("#badgeViewColor");
 const inputName = document.querySelector("#name42");
 
-intraName.textContent = "Intra";
-
 colorSelect.addEventListener("change", function() {
-    badgeView.style.backgroundColor = colorSelect.value;
+  badgeView.style.backgroundColor = colorSelect.value;
 });
 
-inputName.addEventListener("change", function() {
-    nameEx.textContent = inputName.value;
+inputName.addEventListener("input", function() {
+  nameEx.textContent = inputName.value;
 });
 
-inputIntra.addEventListener("change", function() {
-    intraName.textContent = inputIntra.value;
+inputIntra.addEventListener("input", function() {
+  intraName.textContent = inputIntra.value;
 });

@@ -57,6 +57,7 @@ body {
 }
 
 .profile {
+    position: relative;
     background-color: 162338;
     border-radius: 50%;
     border: 2px solid red;
@@ -83,4 +84,11 @@ body {
     color: white;
     font-size: 23px;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.badgeView {
+    -webkit-transition: all 200ms ease-out;
+    -moz-transition: all 200ms ease-out;
+    -o-transition: all 200ms ease-out;
+    transition: all 200ms ease-out;
 }
