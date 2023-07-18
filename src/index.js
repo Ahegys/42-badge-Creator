@@ -12,7 +12,8 @@ themes.forEach((theme) => {
   concatenatedPaths.push(backPath);
 });
 
-console.log(concatenatedPaths);
+
+
 
 const imgBack = document.querySelector(".imgBack");
 const imgBackground = document.createElement("img");
