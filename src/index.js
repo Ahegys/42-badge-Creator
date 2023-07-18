@@ -48,24 +48,6 @@ colorSelect.addEventListener('change', () => {
   badgeView.style.backgroundColor = hexToRgba(colorSelect.value, alphaValue);
 });
 
-const fileBack = document.querySelector("#backgroundFile")
-
-fileBack.addEventListener("change", function(event) {
-  const file = event.target.files[0];
-  
-  if (file) {
-    const reader = new FileReader();
-    
-    reader.addEventListener("load", function() {
-      console.log(reader.result);
-      imgBackground.src = reader.result; // Removendo as aspas extras aqui
-    });
-    
-    reader.readAsDataURL(file);
-  }
-});
-
-
 const inputName = document.querySelector("#name42");
 const nameEx = document.querySelector(".nameEx");
 
