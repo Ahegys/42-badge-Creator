@@ -15,7 +15,6 @@ body {
 }
 
 .badgeView {
-    background-color: #1b2029;
     display: flex;
     justify-content: center;
     flex-direction: column;
@@ -23,11 +22,39 @@ body {
     height: 60vh;
     width: 20vw;
     border-radius: 25px;
-}
-
+  }
+  
+  .imgBack {
+    position: relative;
+    height: 60vh;
+    width: 20vw;
+    border-radius: 25px;
+    background-color: #272b31;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 10px 25px;
+  }
+  
+  .imgBack::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    
+    border-radius: 25px;
+  }
+  
+  .imgBack > * {
+    position: relative;
+    z-index: 1;
+  }
 .profilePhoto {
     height: 100px;
     width: 100px;
+    -webkit-clip-path: polygon(25% 5%, 75% 5%, 100% 50%, 75% 95%, 25% 95%, 0% 50%);
+    clip-path: polygon(25% 5%, 75% 5%, 100% 50%, 75% 95%, 25% 95%, 0% 50%);
     border-radius: 50%;
     cursor: pointer;
 }
@@ -69,16 +96,6 @@ body {
     background-color: red;
     text-align: center;
     width: 35vh;
-}
-
-.config {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    padding: 25px 25px 25px 25px;
-    color: white;
-    font-size: 23px;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 .badgeView {
