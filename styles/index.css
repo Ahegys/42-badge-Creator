@@ -2,6 +2,17 @@
     margin: 0;
     padding: 0;
 }
+
+@font-face {
+    font-family: "Abula-Light";
+    src: url("../assets/Fonts/Abula/Abula-Light.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: "Now";
+    src: url("../assets/Fonts/now/Now-Light.otf") format("opentype");
+}
+
 body {
     background-color: #162338;
     display: flex;
@@ -16,16 +27,24 @@ body {
 
 .badgeView {
     display: flex;
+    position: relative;
+    top: -600px;
     justify-content: center;
     flex-direction: column;
     align-items: center;
-    background-color: rgba(0, 244, 0, 0.4);
     height: 60vh;
     width: 20vw;
     border-radius: 25px;
   }
-  
-  .imgBack {
+
+#imgBack {
+    height: 60vh;
+    width: 20vw;
+
+    border: 2px solid cyan;
+    background-color: aliceblue;
+}
+.imgBack {
     position: relative;
     height: 60vh;
     width: 20vw;
@@ -34,8 +53,10 @@ body {
     background-size: cover;
     background-repeat: no-repeat;
     background-position: 10px 25px;
-  }
-  
+}
+
+
+
   .imgBack::before {
     content: "";
     position: absolute;
@@ -54,10 +75,16 @@ body {
 .profilePhoto {
     height: 100px;
     width: 100px;
-    -webkit-clip-path: polygon(25% 5%, 75% 5%, 100% 50%, 75% 95%, 25% 95%, 0% 50%);
-    clip-path: polygon(25% 5%, 75% 5%, 100% 50%, 75% 95%, 25% 95%, 0% 50%);
     border-radius: 50%;
     cursor: pointer;
+}
+
+.dynamicImg {
+    background: url("../assets/TEMPLATES/Front/1.png");
+    height: 400px;
+    width: 250px;
+    border-radius: 50%;
+    background-position: 10% 10%;
 }
 
 .qrCode {
@@ -68,8 +95,7 @@ body {
 
 .badgeView > h2 {
     color: white;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    font-size: 25px;
+    font-size: 35px;
     margin: 25px;
 }
 
@@ -88,15 +114,23 @@ body {
 }
 
 .nameEx {
-    background-color: red;
     text-align: center;
-    width: 35vh;
+    font-weight: 280;
+    font-size: 10px;
+    text-align: start;
+    font-family: "Abula-Light";
+    overflow-wrap: break-word;
+    word-wrap: break-word;
+    word-break: break-word;
+    width: 35vh;;
 }
 
 .intraName {
-    background-color: red;
-    text-align: center;
-    width: 35vh;
+    font-family: "Now";
+    font-size: 7px;
+    font-weight: 200;
+    text-align: start;
+    width: 10vw;
 }
 
 .badgeView {
