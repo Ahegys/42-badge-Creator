@@ -68,10 +68,11 @@ body {
     border-radius: 25px;
   }
   
-  .imgBack > * {
+.imgBack > * {
     position: relative;
     z-index: 1;
-  }
+}
+
 .profilePhoto {
     height: 100px;
     width: 100px;
@@ -80,13 +81,22 @@ body {
 }
 
 .dynamicImg {
-    background: url("../assets/TEMPLATES/Front/1.png");
-    height: 400px;
-    width: 250px;
+    background: url("../imgs/pic.jfif");
+    position: relative;
+    aspect-ratio: 1 / 1; /* Set the aspect ratio to 1:1 */
+    height: 42%;
+    width: 70%;
+    bottom: 35px;
+    border: 2px solid cyan;
+    background-position: 50% 100%;
+    background-size: cover; /* Use cover to fill the container */
     border-radius: 50%;
-    background-position: 10% 10%;
-}
+  }
 
+  .dynamicImg:hover {
+    border: 2px solid red;
+  }
+  
 .qrCode {
     border: 1px solid white;
     border-radius: 25px;
@@ -114,6 +124,9 @@ body {
 }
 
 .nameEx {
+    position: relative;
+    bottom: 45px;
+    right: 30%;
     text-align: center;
     font-weight: 280;
     font-size: 10px;
@@ -122,10 +135,11 @@ body {
     overflow-wrap: break-word;
     word-wrap: break-word;
     word-break: break-word;
-    width: 35vh;;
 }
 
 .intraName {
+    position: relative;
+    bottom: 4%;
     font-family: "Now";
     font-size: 7px;
     font-weight: 200;
@@ -138,4 +152,8 @@ body {
     -moz-transition: all 200ms ease-out;
     -o-transition: all 200ms ease-out;
     transition: all 200ms ease-out;
+}
+
+.badgeView > h2:hover {
+    border: 2px solid red;
 }
