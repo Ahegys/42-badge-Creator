@@ -48,15 +48,6 @@ colorSelect.addEventListener('change', () => {
   badgeView.style.backgroundColor = hexToRgba(colorSelect.value, alphaValue);
 });
 
-const scaleImg = document.querySelector("#scale");
-
-scaleImg.addEventListener("input", (e) => {
-  const scaleValue = e.target.value / 100.0;
-  imgBackground.style.backgroundSize = "cover";
-  imgBackground.style.transform = `scale(${scaleValue})`;
-});
-const posXInput = document.getElementById("backX");
-
 // posXInput.addEventListener("input", function(e) {
 //   e.preventDefault();
 //   e.stopPropagation();
