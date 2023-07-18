@@ -15,14 +15,14 @@ themes.forEach((theme) => {
 
 
 
-const imgBack = document.querySelector(".imgBack");
-const imgBackground = document.createElement("img");
+// const imgBack = document.querySelector(".imgBack");
+// const imgBackground = document.createElement("img");
 
-imgBackground.src = templateImgs + themes[0];
-imgBackground.id = "imgBack";
+// imgBackground.src = templateImgs + themes[0];
+// imgBackground.id = "imgBack";
 
-imgBack.insertBefore(imgBackground, imgBack.firstChild);
-console.log(imgBack);
+// imgBack.insertBefore(imgBackground, imgBack.firstChild);
+// console.log(imgBack);
 
 const badgeView = document.querySelector(".badgeView");
 const colorSelect = document.querySelector("#badgeViewColor");
