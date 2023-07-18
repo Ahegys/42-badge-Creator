@@ -5,10 +5,10 @@ const inputIntra = document.querySelector("#intraName");
 const colorSelect = document.querySelector("#badgeViewColor");
 const inputName = document.querySelector("#name42");
 const imgBack = document.querySelector(".imgBack");
-const fileBack = document.querySelector("#backgroundFile")
 const posXInput = document.getElementById("backX");
 const posYInput = document.getElementById("backY");
 const autorange = document.getElementById("autorange");
+const fileBack = document.querySelector("#backgroundFile")
 
 
 posXInput.addEventListener("input", function(e) {
@@ -25,7 +25,6 @@ posYInput.addEventListener("input", function(e) {
   imgBack.style.backgroundPositionY = posY + "%";
 });
 
-
 fileBack.addEventListener("change", function(event) {
   const file = event.target.files[0];
 
@@ -33,20 +32,22 @@ fileBack.addEventListener("change", function(event) {
     const reader = new FileReader();
 
     reader.addEventListener("load", function() {
-      imgBack.style.background = `url("${reader.result}")`;
-      autorange.addEventListener("change", () => {
-        if (autorange.checked) {
-          imgBack.style.backgroundSize = "cover";
-          imgBack.style.backgroundRepeat = "no-repeat";
-          imgBack.style.backgroundPosition = "center center";
-        } else {
-          imgBack.style.backgroundRepeat = "initial";
-          imgBack.style.backgroundSize = "initial";
-        }
-      });
+      imgBack.style.backgroundImage = `url("${reader.result}")`;
     });
 
     reader.readAsDataURL(file);
+  }
+});
+
+autorange.addEventListener("change", function() {
+  if (autorange.checked) {
+    imgBack.style.backgroundSize = "cover";
+    imgBack.style.backgroundRepeat = "no-repeat";
+    imgBack.style.backgroundPosition = "center center";
+  } else {
+    imgBack.style.backgroundSize = "initial";
+    imgBack.style.backgroundRepeat = "initial";
+    imgBack.style.backgroundPosition = "initial";
   }
 });
 
