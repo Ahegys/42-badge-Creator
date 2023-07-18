@@ -12,18 +12,6 @@ themes.forEach((theme) => {
   concatenatedPaths.push(backPath);
 });
 
-
-
-
-// const imgBack = document.querySelector(".imgBack");
-// const imgBackground = document.createElement("img");
-
-// imgBackground.src = templateImgs + themes[0];
-// imgBackground.id = "imgBack";
-
-// imgBack.insertBefore(imgBackground, imgBack.firstChild);
-// console.log(imgBack);
-
 const badgeView = document.querySelector(".badgeView");
 const colorSelect = document.querySelector("#badgeViewColor");
 
