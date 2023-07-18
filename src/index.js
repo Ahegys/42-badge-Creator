@@ -48,22 +48,6 @@ colorSelect.addEventListener('change', () => {
   badgeView.style.backgroundColor = hexToRgba(colorSelect.value, alphaValue);
 });
 
-// posXInput.addEventListener("input", function(e) {
-//   e.preventDefault();
-//   e.stopPropagation();
-//   const posX = posXInput.value;
-//   imgBack.style.backgroundPositionX = posX + "%";
-// });
-
-// const posYInput = document.getElementById("backY");
-
-// posYInput.addEventListener("input", function(e) {
-//   e.preventDefault();
-//   e.stopPropagation();
-//   const posY = posYInput.value;
-//   imgBack.style.backgroundPositionY = posY + "%";
-// });
-
 const fileBack = document.querySelector("#backgroundFile")
 
 fileBack.addEventListener("change", function(event) {
@@ -80,22 +64,6 @@ fileBack.addEventListener("change", function(event) {
     reader.readAsDataURL(file);
   }
 });
-
-
-// const autorange = document.getElementById("autorange");
-
-
-// autorange.addEventListener("change", function() {
-//   if (autorange.checked) {
-//     imgBack.style.backgroundSize = "cover";
-//     imgBack.style.backgroundRepeat = "no-repeat";
-//     imgBack.style.backgroundPosition = "center center";
-//   } else {
-//     imgBack.style.backgroundSize = "initial";
-//     imgBack.style.backgroundRepeat = "initial";
-//     imgBack.style.backgroundPosition = "initial";
-//   }
-// });
 
 
 const inputName = document.querySelector("#name42");
