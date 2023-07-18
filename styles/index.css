@@ -84,7 +84,7 @@ body {
     background: url("../imgs/pic.jfif");
     position: relative;
     aspect-ratio: 1 / 1; /* Set the aspect ratio to 1:1 */
-    height: 42%;
+    height: 43%;
     width: 70%;
     bottom: 35px;
     border: 2px solid cyan;
@@ -125,7 +125,7 @@ body {
 
 .nameEx {
     position: relative;
-    bottom: 45px;
+    bottom: 50px;
     right: 30%;
     text-align: center;
     font-weight: 280;
