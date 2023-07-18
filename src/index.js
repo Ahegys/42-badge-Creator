@@ -1,15 +1,7 @@
-const badgeView = document.querySelector(".badgeView");
-const nameEx = document.querySelector(".nameEx");
-const intraName = document.querySelector(".intraName");
-const inputIntra = document.querySelector("#intraName");
-const colorSelect = document.querySelector("#badgeViewColor");
-const inputName = document.querySelector("#name42");
-const imgBack = document.querySelector(".imgBack");
-const posXInput = document.getElementById("backX");
-const posYInput = document.getElementById("backY");
-const autorange = document.getElementById("autorange");
-const fileBack = document.querySelector("#backgroundFile")
+//const badgeView = document.querySelector(".badgeView");
+//const colorSelect = document.querySelector("#badgeViewColor");
 
+const posXInput = document.getElementById("backX");
 
 posXInput.addEventListener("input", function(e) {
   e.preventDefault();
@@ -18,6 +10,8 @@ posXInput.addEventListener("input", function(e) {
   imgBack.style.backgroundPositionX = posX + "%";
 });
 
+const posYInput = document.getElementById("backY");
+
 posYInput.addEventListener("input", function(e) {
   e.preventDefault();
   e.stopPropagation();
@@ -25,19 +19,24 @@ posYInput.addEventListener("input", function(e) {
   imgBack.style.backgroundPositionY = posY + "%";
 });
 
+const fileBack = document.querySelector("#backgroundFile")
+
 fileBack.addEventListener("change", function(event) {
   const file = event.target.files[0];
-
+  
   if (file) {
     const reader = new FileReader();
-
+    
     reader.addEventListener("load", function() {
       imgBack.style.backgroundImage = `url("${reader.result}")`;
     });
-
+    
     reader.readAsDataURL(file);
   }
 });
+
+const autorange = document.getElementById("autorange");
+const imgBack = document.querySelector(".imgBack");
 
 autorange.addEventListener("change", function() {
   if (autorange.checked) {
@@ -52,6 +51,8 @@ autorange.addEventListener("change", function() {
 });
 
 
+const inputName = document.querySelector("#name42");
+const nameEx = document.querySelector(".nameEx");
 
 inputName.addEventListener("input", function() {
   if (inputName.value.lenght > 12){
@@ -59,6 +60,9 @@ inputName.addEventListener("input", function() {
   }
   nameEx.textContent = inputName.value;
 });
+
+const inputIntra = document.querySelector("#intraName");
+const intraName = document.querySelector(".intraName");
 
 inputIntra.addEventListener("input", function() {
   if (inputIntra.value.lenght > 45){
